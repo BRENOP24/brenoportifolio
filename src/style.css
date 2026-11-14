@@ -466,8 +466,47 @@ html {
 
 /* Efeito ao passar o mouse */
 .menu-rapido a:hover {
+
     background: #ffffff;
     color: #121212; /* Ajuste para a cor de fundo escura do seu portfólio */
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+}
+
+
+
+
+/* --- BOTÃO DO CERTIFICADO --- */
+.btn-certificado {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+    text-decoration: none;
+    color: var(--texto-claro);
+    background: rgba(88, 166, 255, 0.08);
+    border: 1px solid var(--cor-borda);
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.25s ease;
+}
+
+.btn-certificado:hover {
+    background: var(--gradiente);
+    color: #ffffff;
+    border-color: transparent;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(88, 166, 255, 0.35);
+}
+
+/* Itens da Formação sem lista: tira o espaço sobrando embaixo do cabeçalho */
+.experiencia-item .exp-header:last-child {
+    margin-bottom: 0;
+}
+
+/* Menu rápido agora tem 5 links: permite quebrar linha no celular */
+.menu-rapido {
+    flex-wrap: wrap;
 }
